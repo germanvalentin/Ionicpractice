@@ -4,7 +4,7 @@
       Anotador de Gastos
     </ion-title>
   </ion-toolbar>
-  <ion-searchbar (ionChange)="buscar($event)" animated="true"></ion-searchbar>
+  <ion-searchbar (ionChange)="buscar($any($event.target).value)" animated="true"></ion-searchbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
